@@ -4,7 +4,7 @@ CT_LIBTOOL_VERSION=2.4.6
 
 do_companion_tools_libtool_get() {
     CT_GetFile "libtool-${CT_LIBTOOL_VERSION}"     \
-        {http,ftp,https}://ftp.gnu.org/gnu/libtool
+        https://ftpmirror.gnu.org/gnu/libtool
 }
 
 do_companion_tools_libtool_extract() {

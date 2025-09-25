@@ -10,7 +10,7 @@ if [ "${CT_LIBICONV}" = "y" ]; then
 
 do_libiconv_get() {
     CT_GetFile "libiconv-${CT_LIBICONV_VERSION}" \
-               http://ftp.gnu.org/pub/gnu/libiconv/
+               https://ftpmirror.gnu.org/pub/gnu/libiconv/
 }
 
 do_libiconv_extract() {

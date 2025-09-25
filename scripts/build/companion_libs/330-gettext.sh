@@ -10,7 +10,7 @@ if [ "${CT_GETTEXT}" = "y" ]; then
 
 do_gettext_get() {
     CT_GetFile "gettext-${CT_GETTEXT_VERSION}" \
-               http://ftp.gnu.org/pub/gnu/gettext/
+               https://ftpmirror.gnu.org/pub/gnu/gettext/
 }
 
 do_gettext_extract() {

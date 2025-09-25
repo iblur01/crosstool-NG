@@ -4,7 +4,7 @@ CT_AUTOMAKE_VERSION=1.11.1
 
 do_companion_tools_automake_get() {
     CT_GetFile "automake-${CT_AUTOMAKE_VERSION}"    \
-        {http,ftp,https}://ftp.gnu.org/gnu/automake
+        https://ftpmirror.gnu.org/gnu/automake
 }
 
 do_companion_tools_automake_extract() {

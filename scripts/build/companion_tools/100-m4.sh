@@ -4,7 +4,7 @@ CT_M4_VERSION=1.4.13
 
 do_companion_tools_m4_get() {
     CT_GetFile "m4-${CT_M4_VERSION}"          \
-        {http,ftp,https}://ftp.gnu.org/gnu/m4
+        https://ftpmirror.gnu.org/gnu/m4
 }
 
 do_companion_tools_m4_extract() {

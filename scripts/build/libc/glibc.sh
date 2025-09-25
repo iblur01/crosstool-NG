@@ -566,7 +566,7 @@ do_libc_get() {
                        http://cbuild.validation.linaro.org/snapshots
         else
             CT_GetFile "glibc-${CT_LIBC_VERSION}"                                        \
-                       {http,ftp,https}://ftp.gnu.org/gnu/glibc                          \
+                       https://ftpmirror.gnu.org/gnu/glibc                               \
                        ftp://{sourceware.org,gcc.gnu.org}/pub/glibc/{releases,snapshots}
         fi
     fi
@@ -586,7 +586,7 @@ do_libc_get() {
 
         if ! CT_GetFile "glibc-${addon}-${CT_LIBC_VERSION}"                      \
                http://mirrors.kernel.org/sourceware/glibc                        \
-               {http,ftp,https}://ftp.gnu.org/gnu/glibc                          \
+               https://ftpmirror.gnu.org/gnu/glibc                               \
                ftp://{sourceware.org,gcc.gnu.org}/pub/glibc/{releases,snapshots}
         then
             # Some add-ons are bundled with glibc, others are

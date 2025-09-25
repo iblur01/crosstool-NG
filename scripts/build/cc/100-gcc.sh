@@ -23,7 +23,7 @@ do_gcc_get() {
         # Also, Split out linaro mirrors, so that downloads happen faster.
         if [ x"${linaro_version}" = x"${CT_CC_GCC_VERSION}" ]; then
             CT_GetFile "gcc-${CT_CC_GCC_VERSION}"                                                   \
-                       {http,ftp,https}://ftp.gnu.org/gnu/gcc/gcc-${CT_CC_GCC_VERSION} \
+                       https://ftpmirror.gnu.org/gnu/gcc/gcc-${CT_CC_GCC_VERSION}      \
                        ftp://{gcc.gnu.org,sourceware.org}/pub/gcc/releases/gcc-${CT_CC_GCC_VERSION}
         else
             YYMM=`echo ${CT_CC_GCC_VERSION} |cut -d- -f3 |${sed} -e 's,^..,,'`

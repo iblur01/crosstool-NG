@@ -10,7 +10,7 @@ if [ "${CT_NCURSES_TARGET}" = "y" -o "${CT_NCURSES}" = "y" ]; then
 
 do_ncurses_get() {
     CT_GetFile "ncurses-${CT_NCURSES_VERSION}" .tar.gz  \
-               {http,ftp,https}://ftp.gnu.org/pub/gnu/ncurses     \
+               https://ftpmirror.gnu.org/pub/gnu/ncurses           \
                ftp://invisible-island.net/ncurses
 }
 
