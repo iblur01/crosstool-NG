@@ -25,8 +25,8 @@ cloog_basename_version() {
 # Download CLooG
 do_cloog_get() {
     CT_GetFile "$(cloog_basename_version)"          \
-        https://gcc.gnu.org/pub/gcc/infrastructure   \
-        ftp://gcc.gnu.org/pub/gcc/infrastructure
+        https://sourceforge.net/projects/pocc/files/1.6/release/modules/   \
+        https://gcc.gnu.org/pub/gcc/infrastructure/
 }
 
 # Extract CLooG
