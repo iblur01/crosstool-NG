@@ -76,19 +76,8 @@ do_cloog_for_build() {
 
 # Build CLooG for running on host
 do_cloog_for_host() {
-    local -a cloog_opts
-
-    CT_DoStep INFO "Installing CLooG for host"
-    CT_mkdir_pushd "${CT_BUILD_DIR}/build-cloog-host-${CT_HOST}"
-
-    cloog_opts+=( "host=${CT_HOST}" )
-    cloog_opts+=( "prefix=${CT_HOST_COMPLIBS_DIR}" )
-    cloog_opts+=( "cflags=${CT_CFLAGS_FOR_HOST}" )
-    cloog_opts+=( "ldflags=${CT_LDFLAGS_FOR_HOST}" )
-    do_cloog_backend "${cloog_opts[@]}"
-
-    CT_Popd
-    CT_EndStep
+    CT_DoStep INFO "Skipping CLooG (disabled)"
+    return 0
 }
 
 # Build CLooG
